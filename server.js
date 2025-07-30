@@ -6,6 +6,9 @@ const cors = require('cors');
 const { body, validationResult } = require('express-validator');
 require('dotenv').config();
 
+console.log('Server.js está sendo inicializado!'); // Adicione esta linha
+
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 

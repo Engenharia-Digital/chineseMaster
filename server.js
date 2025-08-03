@@ -16,7 +16,8 @@ const PORT = process.env.PORT || 3001;
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://chinesemaster-frontend.vercel.app'  // ← Adicionar esta linha
+    'https://chinesemaster-frontend.vercel.app',
+    'https://chinesemaster.engdig.com' 
   ],
   credentials: true
 }));

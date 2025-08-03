@@ -13,7 +13,13 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://chinesemaster-frontend.vercel.app'  // ← Adicionar esta linha
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // Configuração do banco de dados
